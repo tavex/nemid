@@ -7,7 +7,7 @@
 ## Install
 
 ```sh
-npm install @noaignite-dk/nemid
+npm install @tavexit/nemid
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install @noaignite-dk/nemid
 Server:
 
 ```js
-const { NemID } = require('@noaignite-dk/nemid')
+const { NemID } = require('@tavexit/nemid')
 const fs = require('fs')
 const path = require('path')
 const crypto = require('crypto')
@@ -70,7 +70,7 @@ server.post('/authenticate/verify', (req, res) => {
 Client:
 
 ```js
-const { getNemIDAuthContext } = require('@noaignite-dk/nemid')
+const { getNemIDAuthContext } = require('@tavexit/nemid')
 const { data: parameters } = await get('http://localhost:8080/authenticate')
 
 const context = getNemIDAuthContext(parameters)

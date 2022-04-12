@@ -1,5 +1,5 @@
 {
-  "name": "@noaignite-dk/nemid",
+  "name": "@tavexit/nemid",
   "version": "1.0.5",
   "description": "Node.js module for NemID authentication and signing",
   "scripts": {
