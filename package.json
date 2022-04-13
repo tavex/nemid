@@ -1,6 +1,6 @@
 {
   "name": "@tavexit/nemid",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Node.js module for NemID authentication and signing",
   "scripts": {
     "build": "tsc",
@@ -13,6 +13,7 @@
   "browser": "./dist/browser.js",
   "types": "./dist/index.d.js",
   "dependencies": {
+    "@typescript-eslint/parser": "^5.19.0",
     "compare": "^2.0.0",
     "nanoassert": "^2.0.0",
     "node-webcrypto-ossl": "^1.0.48",
