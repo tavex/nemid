@@ -7,7 +7,8 @@
     "test": "eslint .",
     "version": "standard-version",
     "clean": "rimraf ./dist",
-    "prepare-release": "run-s clean test build version"
+    "prepare-release": "run-s clean test build version",
+    "prepublish": "npm run build"
   },
   "main": "./dist/index.js",
   "browser": "./dist/browser.js",
