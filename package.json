@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NoA-Ignite-dk/nemid.git"
+    "url": "git+https://github.com/tavexit/nemid.git"
   },
   "config": {
     "commitizen": {
@@ -48,10 +48,10 @@
     "api",
     "denmark"
   ],
-  "author": "Joshua Nielsen <jdpnielsen@gmail.com> (https://github.com/jdpnielsen)",
+  "author": "Tavex IT (https://github.com/tavexit)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NoA-Ignite-dk/nemid/issues"
+    "url": "https://github.com/tavexit/nemid/issues"
   },
-  "homepage": "https://github.com/NoA-Ignite-dk/nemid#readme"
+  "homepage": "https://github.com/tavexit/nemid#readme"
 }
