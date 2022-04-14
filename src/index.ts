@@ -10,12 +10,6 @@ export type { getNemIDAuthContext } from './browser';
 // Unfortunately a singleton
 XmlDSigJs.Application.setEngine('OpenSSL', new WebCrypto() as unknown as Crypto);
 
-function derToPem (buf: Buffer) {
-	return `-----BEGIN CERTIFICATE-----
-${buf.toString('base64')!.match(/.{1,64}/g)!.join('\n')}
------END CERTIFICATE-----`;
-}
-
 interface Parameters {
 	clientflow: string;
 	clientmode: string;
@@ -75,7 +69,7 @@ export class NemID {
 		this._clientCert = clientCert;
 		this._serverCA = serverCA;
 
-		this._lookup = new PIDCPRRequest(spid, clientKey, derToPem(clientCert), env.pid);
+		this._lookup = new PIDCPRRequest(spid, clientKey, clientCert.toString(), env.pid);
 	}
 
 	authenticate ({ origin }: { origin: string}) {
